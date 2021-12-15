@@ -1,0 +1,30 @@
+{% extends 'base-layout-1.html.twig' %}
+
+{% block main %}
+<!-- Main Content Wrapper Start -->
+<main class="main-content-wrapper">
+    <!-- slider start -->
+    {% include "components/slider.html.twig" %}
+    <!-- slider end -->
+    <!-- Top Sale Area Start -->
+    {% include "components/top-sale-area.html.twig" %}
+    <!-- Top Sale Area End -->
+    <!-- featured-area start -->
+    {% include "components/featured-area.html.twig" %}
+    <!-- featured-area end -->
+    <!-- Product Tab Area Start -->
+    {% include "components/product-tab-area.html.twig" %}
+    <!-- Product Tab Area End -->
+    <!-- brand-area start -->
+    {% include "components/brands-area.html.twig" %}
+    <!-- brand-area end -->
+    <!-- Best Sale Product Area Start -->
+    {% include "components/best-sale-product.html.twig" %}
+    <!-- Best Sale Product Area End -->
+    <!-- latest-blog-area start -->
+    {% include "components/latest-blog-area.html.twig" %}
+    <!-- latest-blog-area end -->
+</main>
+<!-- Main Content Wrapper end -->
+
+{% endblock %}

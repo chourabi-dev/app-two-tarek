@@ -1,0 +1,24 @@
+<section class="top-sale-area mb--75 mb-md--55">
+    <div class="container">
+        <div class="row mb--35 mb-md--23">
+            <div class="col-12 text-center">
+                <h2>This Week Top Sales</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="element-carousel"
+                data-slick-options='{
+                    "spaceBetween": 30,
+                    "slidesToShow": 3
+                }'
+                data-slick-responsive='[
+                    {"breakpoint": 768, "settings": {"slidesToShow": 2}},
+                    {"breakpoint": 480, "settings": {"slidesToShow": 1}}
+                ]'>
+                    {% include "components/top-sale-item.html.twig" %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

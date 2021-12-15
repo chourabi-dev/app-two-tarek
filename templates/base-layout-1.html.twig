@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+<div class="wrapper">
+    <!-- Preloader Start -->
+    {% include "components/preloader.html.twig" %}
+    <!-- Preloader End -->
+    <!-- header start -->
+    {% include "components/header.html.twig" %}
+    <!-- header end -->
+    {% block main %}{% endblock %}
+    <!-- footer start -->
+    {% include "components/footer.html.twig" %}
+    <!-- footer end -->
+    <!-- OffCanvas Menu Start -->
+    {% include "components/offcanvas-menu.html.twig" %}
+    <!-- OffCanvas Menu End --> 
+
+    <!-- Mini Cart Start -->
+    {% include "components/mini-card.html.twig" %}
+    <!-- Mini Cart End -->
+
+    <!-- Searchform Popup Start -->
+    {% include "components/searchform.html.twig" %}
+    <!-- Searchform Popup End -->
+
+    <!-- Qicuk View Modal Start -->
+    {% include "components/quick-view.html.twig" %}
+    <!-- Qicuk View Modal End -->
+
+    <!-- Global Overlay Start -->
+    <div class="global-overlay"></div>
+    <!-- Global Overlay End -->
+
+    <!-- Global Overlay Start -->
+    <a class="scroll-to-top" href=""><i class="la la-angle-double-up"></i></a>
+    <!-- Global Overlay End -->
+
+</div>
+
+{% endblock %}

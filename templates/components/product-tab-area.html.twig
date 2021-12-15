@@ -1,0 +1,36 @@
+<section class="product-tab-area mb--30 mb-md--10">
+    <div class="container">
+        <div class="row mb--28 mb-md--18 mb-sm--33">
+            <div class="col-md-3 text-md-start text-center">
+                <h2>All Products</h2>
+            </div>
+            <div class="col-md-9">
+                <div class="tab-style-1">
+                    <div class="nav nav-tabs justify-content-md-end justify-content-center" id="product-tab" role="tablist">
+                        {% for item in categories %}
+                        <button type="button" class="nav-item nav-link " id="tab-id-item-{{loop.index}}" data-bs-toggle="tab" data-bs-target="#tab-id-{{loop.index}}" role="tab" aria-controls="tab-id-{{loop.index}}" aria-selected="true">
+                            <span class="nav-text">{{item.category}}</span>
+                        </button>
+                        {% endfor %} 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="tab-content" id="product-tab-content">
+                    {% for tab in categories %}
+                    <div class="tab-pane fade  " id="tab-id-{{loop.index}}" role="tabpanel" aria-labelledby="tab-id-{{loop.index}}">
+                        <div class="row">
+                            
+                            {% for product in tab.products %}
+                                {% include "components/featured-product-card.html.twig" %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endfor %} 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

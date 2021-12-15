@@ -1,0 +1,28 @@
+<div class="brand-logo-area mb--80 mb-md--60">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-12">
+                <div class="brand-log-wrapper bg-color ptb--75" data-bg-color="#e9fefd">
+                    <div class="element-carousel"
+                    data-slick-options='{
+                        "slidesToShow": 5,
+                        "autoplay": true
+                    }'
+                    data-slick-responsive='[
+                        {"breakpoint": 1200, "settings": {"slidesToShow": 4}},
+                        {"breakpoint": 992, "settings": {"slidesToShow": 3}},
+                        {"breakpoint": 768, "settings": {"slidesToShow": 2}},
+                        {"breakpoint": 480, "settings": {"slidesToShow": 1}}
+                    ]'>
+                        
+
+                    {% for brand in [0..9] %}
+                        {% include "components/brand-item.html.twig" %}
+                    {% endfor %}
+                         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

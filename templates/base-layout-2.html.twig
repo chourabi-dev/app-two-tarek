@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+ 
+{% block content %}
+<!-- footer start -->
+{% include "components/header.html.twig" %}
+<!-- footer end --> 
+<!-- footer start -->
+{% include "components/breadcrumb.html.twig" %}
+<!-- footer end --> 
+{% block main %}{% endblock %}
+<!-- footer start -->
+{% include "components/footer.html.twig" %}
+<!-- footer end --> 
+{% endblock %}
+ 

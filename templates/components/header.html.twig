@@ -1,0 +1,33 @@
+<header class="header">
+    <div class="header__inner fixed-header">
+        <div class="header__main">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="header__main-inner">
+                            <div class="header__main-left">
+                                <div class="logo">
+                                    <a href="#" class="logo--normal">
+                                        <img src="{{ asset('/template/assets/img/logo/logo.png') }}" alt="Logo">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="header__main-center">
+                                <!-- header-main-menu start -->
+                                {% include "components/menus/main-menu.html.twig" %}
+                                <!-- header-main-menu end -->
+                            </div>
+                            <div class="header__main-right">
+                                <!-- header-right-block start -->
+                                {% include "components/menus/header-right.html.twig" %}
+                                <!-- header-right-block end -->
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
